@@ -1,0 +1,58 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net472</TargetFramework>
+    <OutputType>Library</OutputType>
+    <RootNamespace>BetterRimworlds.LuminescentWalls</RootNamespace>
+    <AssemblyName>LuminescentWalls</AssemblyName>
+    <LangVersion>10</LangVersion>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+    <Configurations>Release v1.2;Release v1.3;Release v1.4;Release v1.5;Release v1.6</Configurations>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)' == 'Release v1.2'"><DefineConstants>RIMWORLD12</DefineConstants><OutputPath>/rimworld/1.2/Mods/LuminescentWalls/1.2/Assemblies</OutputPath></PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)' == 'Release v1.3'"><DefineConstants>RIMWORLD13</DefineConstants><OutputPath>/rimworld/1.2/Mods/LuminescentWalls/1.3/Assemblies</OutputPath></PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)' == 'Release v1.4'"><DefineConstants>RIMWORLD14</DefineConstants><OutputPath>/rimworld/1.2/Mods/LuminescentWalls/1.4/Assemblies</OutputPath></PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)' == 'Release v1.5'"><DefineConstants>RIMWORLD15</DefineConstants><OutputPath>/rimworld/1.2/Mods/LuminescentWalls/1.5/Assemblies</OutputPath></PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)' == 'Release v1.6'"><DefineConstants>RIMWORLD16</DefineConstants><OutputPath>/rimworld/1.2/Mods/LuminescentWalls/1.6/Assemblies</OutputPath></PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.NETFramework.ReferenceAssemblies" Version="1.0.2" PrivateAssets="all" />
+  </ItemGroup>
+
+  <ItemGroup Condition="'$(Configuration)' == 'Release v1.2'">
+    <Reference Include="Assembly-CSharp"><HintPath>/rimworld/1.2/RimWorldLinux_Data/Managed/Assembly-CSharp.dll</HintPath><Private>False</Private></Reference>
+    <Reference Include="UnityEngine"><HintPath>/rimworld/1.2/RimWorldLinux_Data/Managed/UnityEngine.dll</HintPath><Private>False</Private></Reference>
+    <Reference Include="UnityEngine.CoreModule"><HintPath>/rimworld/1.2/RimWorldLinux_Data/Managed/UnityEngine.CoreModule.dll</HintPath><Private>False</Private></Reference>
+    <Reference Include="UnityEngine.IMGUIModule"><HintPath>/rimworld/1.2/RimWorldLinux_Data/Managed/UnityEngine.IMGUIModule.dll</HintPath><Private>False</Private></Reference>
+    <Reference Include="UnityEngine.TextRenderingModule"><HintPath>/rimworld/1.2/RimWorldLinux_Data/Managed/UnityEngine.TextRenderingModule.dll</HintPath><Private>False</Private></Reference>
+  </ItemGroup>
+  <ItemGroup Condition="'$(Configuration)' == 'Release v1.3'">
+    <Reference Include="Assembly-CSharp"><HintPath>/rimworld/1.3/RimWorldLinux_Data/Managed/Assembly-CSharp.dll</HintPath><Private>False</Private></Reference>
+    <Reference Include="UnityEngine"><HintPath>/rimworld/1.3/RimWorldLinux_Data/Managed/UnityEngine.dll</HintPath><Private>False</Private></Reference>
+    <Reference Include="UnityEngine.CoreModule"><HintPath>/rimworld/1.3/RimWorldLinux_Data/Managed/UnityEngine.CoreModule.dll</HintPath><Private>False</Private></Reference>
+    <Reference Include="UnityEngine.IMGUIModule"><HintPath>/rimworld/1.3/RimWorldLinux_Data/Managed/UnityEngine.IMGUIModule.dll</HintPath><Private>False</Private></Reference>
+    <Reference Include="UnityEngine.TextRenderingModule"><HintPath>/rimworld/1.3/RimWorldLinux_Data/Managed/UnityEngine.TextRenderingModule.dll</HintPath><Private>False</Private></Reference>
+  </ItemGroup>
+  <ItemGroup Condition="'$(Configuration)' == 'Release v1.4'">
+    <Reference Include="Assembly-CSharp"><HintPath>/rimworld/1.4/RimWorldLinux_Data/Managed/Assembly-CSharp.dll</HintPath><Private>False</Private></Reference>
+    <Reference Include="UnityEngine"><HintPath>/rimworld/1.4/RimWorldLinux_Data/Managed/UnityEngine.dll</HintPath><Private>False</Private></Reference>
+    <Reference Include="UnityEngine.CoreModule"><HintPath>/rimworld/1.4/RimWorldLinux_Data/Managed/UnityEngine.CoreModule.dll</HintPath><Private>False</Private></Reference>
+    <Reference Include="UnityEngine.IMGUIModule"><HintPath>/rimworld/1.4/RimWorldLinux_Data/Managed/UnityEngine.IMGUIModule.dll</HintPath><Private>False</Private></Reference>
+    <Reference Include="UnityEngine.TextRenderingModule"><HintPath>/rimworld/1.4/RimWorldLinux_Data/Managed/UnityEngine.TextRenderingModule.dll</HintPath><Private>False</Private></Reference>
+  </ItemGroup>
+  <ItemGroup Condition="'$(Configuration)' == 'Release v1.5'">
+    <Reference Include="Assembly-CSharp"><HintPath>/rimworld/1.5/RimWorldLinux_Data/Managed/Assembly-CSharp.dll</HintPath><Private>False</Private></Reference>
+    <Reference Include="UnityEngine"><HintPath>/rimworld/1.5/RimWorldLinux_Data/Managed/UnityEngine.dll</HintPath><Private>False</Private></Reference>
+    <Reference Include="UnityEngine.CoreModule"><HintPath>/rimworld/1.5/RimWorldLinux_Data/Managed/UnityEngine.CoreModule.dll</HintPath><Private>False</Private></Reference>
+    <Reference Include="UnityEngine.IMGUIModule"><HintPath>/rimworld/1.5/RimWorldLinux_Data/Managed/UnityEngine.IMGUIModule.dll</HintPath><Private>False</Private></Reference>
+    <Reference Include="UnityEngine.TextRenderingModule"><HintPath>/rimworld/1.5/RimWorldLinux_Data/Managed/UnityEngine.TextRenderingModule.dll</HintPath><Private>False</Private></Reference>
+  </ItemGroup>
+  <ItemGroup Condition="'$(Configuration)' == 'Release v1.6'">
+    <Reference Include="Assembly-CSharp"><HintPath>/rimworld/1.6-steam/RimWorldLinux_Data/Managed/Assembly-CSharp.dll</HintPath><Private>False</Private></Reference>
+    <Reference Include="UnityEngine"><HintPath>/rimworld/1.6-steam/RimWorldLinux_Data/Managed/UnityEngine.dll</HintPath><Private>False</Private></Reference>
+    <Reference Include="UnityEngine.CoreModule"><HintPath>/rimworld/1.6-steam/RimWorldLinux_Data/Managed/UnityEngine.CoreModule.dll</HintPath><Private>False</Private></Reference>
+    <Reference Include="UnityEngine.IMGUIModule"><HintPath>/rimworld/1.6-steam/RimWorldLinux_Data/Managed/UnityEngine.IMGUIModule.dll</HintPath><Private>False</Private></Reference>
+    <Reference Include="UnityEngine.TextRenderingModule"><HintPath>/rimworld/1.6-steam/RimWorldLinux_Data/Managed/UnityEngine.TextRenderingModule.dll</HintPath><Private>False</Private></Reference>
+  </ItemGroup>
+</Project>

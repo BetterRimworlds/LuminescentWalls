@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <!-- Deliberately has no designationCategory or recipe: it can never be constructed or spawned through normal gameplay, while still making the prerequisite visible in the research UI. -->
+  <ThingDef ParentName="BuildingBase">
+    <defName>BR_LuminescentWallsResearchBuilding</defName>
+    <label>unavailable luminescent walls research station</label>
+    <description>This research station cannot be constructed. Complete Luminescent Walls by deconstructing illuminescent limestone walls in Ancient Dangers.</description>
+    <thingClass>Building</thingClass>
+    <graphicData>
+      <texPath>UI/Designators/Cancel</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+  </ThingDef>
+  <ThingDef ParentName="Wall" Name="BR_IlluminescentWallBase" Abstract="True">
+    <stuffCategories Inherit="False"/>
+    <costStuffCount>0</costStuffCount>
+    <useStuffTerrainAffordance>false</useStuffTerrainAffordance>
+    <terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+    <statBases>
+      <WorkToBuild>200</WorkToBuild>
+      <Flammability>0</Flammability>
+      <Beauty>2</Beauty>
+    </statBases>
+    <leaveResourcesWhenKilled>true</leaveResourcesWhenKilled>
+    <resourcesFractionWhenDeconstructed>0.5</resourcesFractionWhenDeconstructed>
+    <designationCategory>Structure</designationCategory>
+    <comps>
+      <li Class="CompProperties_Power">
+        <compClass>CompPowerTrader</compClass>
+        <basePowerConsumption>1</basePowerConsumption>
+      </li>
+      <li Class="CompProperties_Glower">
+        <glowRadius>16.5</glowRadius>
+        <glowColor>(220,228,240,0)</glowColor>
+      </li>
+    </comps>
+  </ThingDef>
+  <ThingDef ParentName="BR_IlluminescentWallBase">
+    <defName>BR_IlluminescentLimestoneWall</defName>
+    <label>illuminescent limestone wall</label>
+    <description>A structural limestone wall whose surface emits a sourceless light, largely as described in the book "The Unincorporated Man" by Dani Kollin and Eytan Kollin. Draws 1 W. Deconstructing it advances Luminescent Walls research.</description>
+    <graphicData>
+      <color>(172,178,188)</color>
+    </graphicData>
+    <costList>
+      <BlocksLimestone>5</BlocksLimestone>
+      <ComponentIndustrial>1</ComponentIndustrial>
+      <Silver>2</Silver>
+    </costList>
+    <statBases>
+      <MaxHitPoints>350</MaxHitPoints>
+    </statBases>
+    <researchPrerequisites>
+      <li>BR_LuminescentWalls</li>
+    </researchPrerequisites>
+    <comps>
+      <li Class="BetterRimworlds.LuminescentWalls.CompProperties_IlluminescentLimestone"/>
+    </comps>
+  </ThingDef>
+  <ThingDef ParentName="BR_IlluminescentWallBase">
+    <defName>BR_IlluminescentSandstoneWall</defName>
+    <label>illuminescent sandstone wall</label>
+    <description>A structural sandstone wall emitting sourceless light. Draws 1 W.</description>
+    <graphicData>
+      <color>(194,170,128)</color>
+    </graphicData>
+    <costList>
+      <BlocksSandstone>5</BlocksSandstone>
+      <ComponentIndustrial>1</ComponentIndustrial>
+      <Silver>2</Silver>
+    </costList>
+    <statBases>
+      <MaxHitPoints>315</MaxHitPoints>
+    </statBases>
+    <researchPrerequisites>
+      <li>BR_LuminescentWalls</li>
+    </researchPrerequisites>
+  </ThingDef>
+  <ThingDef ParentName="BR_IlluminescentWallBase">
+    <defName>BR_IlluminescentMarbleWall</defName>
+    <label>illuminescent marble wall</label>
+    <description>A structural marble wall emitting sourceless light. Draws 1 W.</description>
+    <graphicData>
+      <color>(200,200,200)</color>
+    </graphicData>
+    <costList>
+      <BlocksMarble>5</BlocksMarble>
+      <ComponentIndustrial>1</ComponentIndustrial>
+      <Silver>2</Silver>
+    </costList>
+    <statBases>
+      <MaxHitPoints>270</MaxHitPoints>
+    </statBases>
+    <researchPrerequisites>
+      <li>BR_LuminescentWalls</li>
+    </researchPrerequisites>
+  </ThingDef>
+  <ThingDef ParentName="BR_IlluminescentWallBase">
+    <defName>BR_IlluminescentGraniteWall</defName>
+    <label>illuminescent granite wall</label>
+    <description>A structural granite wall emitting sourceless light. Draws 1 W.</description>
+    <graphicData>
+      <color>(118,112,122)</color>
+    </graphicData>
+    <costList>
+      <BlocksGranite>5</BlocksGranite>
+      <ComponentIndustrial>1</ComponentIndustrial>
+      <Silver>2</Silver>
+    </costList>
+    <statBases>
+      <MaxHitPoints>385</MaxHitPoints>
+    </statBases>
+    <researchPrerequisites>
+      <li>BR_LuminescentWalls</li>
+    </researchPrerequisites>
+  </ThingDef>
+  <ThingDef ParentName="BR_IlluminescentWallBase">
+    <defName>BR_IlluminescentSlateWall</defName>
+    <label>illuminescent slate wall</label>
+    <description>A structural slate wall emitting sourceless light. Draws 1 W.</description>
+    <graphicData>
+      <color>(82,86,96)</color>
+    </graphicData>
+    <costList>
+      <BlocksSlate>5</BlocksSlate>
+      <ComponentIndustrial>1</ComponentIndustrial>
+      <Silver>2</Silver>
+    </costList>
+    <statBases>
+      <MaxHitPoints>295</MaxHitPoints>
+    </statBases>
+    <researchPrerequisites>
+      <li>BR_LuminescentWalls</li>
+    </researchPrerequisites>
+  </ThingDef>
+  <ThingDef ParentName="BR_IlluminescentWallBase">
+    <defName>BR_IlluminescentPlasteelWall</defName>
+    <label>illuminescent plasteel wall</label>
+    <description>A fireproof structural plasteel wall emitting sourceless light. Draws 1 W.</description>
+    <graphicData>
+      <color>(170,192,200)</color>
+    </graphicData>
+    <costList>
+      <Plasteel>5</Plasteel>
+      <ComponentIndustrial>1</ComponentIndustrial>
+      <Silver>2</Silver>
+    </costList>
+    <statBases>
+      <MaxHitPoints>1680</MaxHitPoints>
+      <WorkToBuild>400</WorkToBuild>
+      <Beauty>3</Beauty>
+    </statBases>
+    <researchPrerequisites>
+      <li>BR_LuminescentPlasteel</li>
+    </researchPrerequisites>
+  </ThingDef>
+</Defs>
