@@ -3,24 +3,24 @@
   <ResearchProjectDef>
     <defName>BR_LuminescentWalls</defName>
     <label>Luminescent Walls</label>
-    <description>This research cannot be performed normally. Repeatedly deconstruct illuminescent limestone walls in newly generated Ancient Dangers to unlock illuminescent limestone, granite, and slate walls.</description>
+    <description>Atlantean architectural stone that emits soft ambient light from its surface. This research cannot be performed normally.</description>
     <!-- SizeRange 15..20 gives an average perimeter of 66; half is 33, and the average of 1..8 is 4.5. Thus 33 * 4.5 = 148.5, rounded to a baseCost of 150. -->
     <baseCost>150</baseCost>
     <techLevel>Spacer</techLevel>
     <researchViewX>0</researchViewX>
     <researchViewY>5</researchViewY>
-    <tab>Projects</tab>
+    <tab>GlitterTech</tab>
     <requiredResearchBuilding>BR_LuminescentWallsResearchBuilding</requiredResearchBuilding>
   </ResearchProjectDef>
   <ResearchProjectDef>
     <defName>BR_LuminescentPlasteel</defName>
     <label>Luminescent Plasteel</label>
-    <description>Apply sourceless light technology to plasteel walls.</description>
+    <description>Apply sourceless light technology to plasteel walls, while also fireproofing and toughening them.</description>
     <baseCost>1500</baseCost>
     <techLevel>Spacer</techLevel>
     <researchViewX>2</researchViewX>
     <researchViewY>5</researchViewY>
-    <tab>Projects</tab>
+    <tab>GlitterTech</tab>
     <prerequisites>
       <li>BR_LuminescentWalls</li>
     </prerequisites>
