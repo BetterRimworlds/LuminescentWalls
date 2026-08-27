@@ -24,6 +24,7 @@
     <leaveResourcesWhenKilled>true</leaveResourcesWhenKilled>
     <resourcesFractionWhenDeconstructed>0.5</resourcesFractionWhenDeconstructed>
     <designationCategory>Structure</designationCategory>
+    <tickerType>Rare</tickerType>
     <comps>
       <li Class="CompProperties_Power">
         <compClass>CompPowerTrader</compClass>
@@ -33,6 +34,7 @@
         <glowRadius>16.5</glowRadius>
         <glowColor>(220,228,240,0)</glowColor>
       </li>
+      <li Class="BetterRimworlds.LuminescentWalls.CompProperties_StargateTemperatureControl"/>
     </comps>
   </ThingDef>
   <ThingDef ParentName="BR_IlluminescentWallBase">
@@ -40,7 +42,7 @@
     <label>illuminescent limestone wall</label>
     <description>A structural limestone wall whose surface emits a sourceless light, largely as described in the book "The Unincorporated Man" by Dani Kollin and Eytan Kollin. Draws 1 W. Deconstructing it advances Luminescent Walls research.</description>
     <graphicData>
-      <color>(172,178,188)</color>
+      <color>(158, 153, 135)</color>
     </graphicData>
     <costList>
       <BlocksLimestone>5</BlocksLimestone>
@@ -62,7 +64,7 @@
     <label>illuminescent sandstone wall</label>
     <description>A structural sandstone wall emitting sourceless light. Draws 1 W.</description>
     <graphicData>
-      <color>(194,170,128)</color>
+      <color>(126, 104, 94)</color>
     </graphicData>
     <costList>
       <BlocksSandstone>5</BlocksSandstone>
@@ -81,7 +83,7 @@
     <label>illuminescent marble wall</label>
     <description>A structural marble wall emitting sourceless light. Draws 1 W.</description>
     <graphicData>
-      <color>(200,200,200)</color>
+      <color>(132, 135, 132)</color>
     </graphicData>
     <costList>
       <BlocksMarble>5</BlocksMarble>
@@ -100,7 +102,7 @@
     <label>illuminescent granite wall</label>
     <description>A structural granite wall emitting sourceless light. Draws 1 W.</description>
     <graphicData>
-      <color>(118,112,122)</color>
+      <color>(105, 95, 97)</color>
     </graphicData>
     <costList>
       <BlocksGranite>5</BlocksGranite>
@@ -119,7 +121,7 @@
     <label>illuminescent slate wall</label>
     <description>A structural slate wall emitting sourceless light. Draws 1 W.</description>
     <graphicData>
-      <color>(82,86,96)</color>
+      <color>(70, 70, 70)</color>
     </graphicData>
     <costList>
       <BlocksSlate>5</BlocksSlate>
