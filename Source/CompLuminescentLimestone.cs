@@ -8,17 +8,17 @@ using Verse;
 
 namespace BetterRimworlds.LuminescentWalls;
 
-public class CompProperties_IlluminescentLimestone : CompProperties
+public class CompProperties_LuminescentLimestone : CompProperties
 {
     public int reverseEngineerPointsMin = 1;
     public int reverseEngineerPointsMax = 8;
-    public CompProperties_IlluminescentLimestone() => compClass = typeof(CompIlluminescentLimestone);
+    public CompProperties_LuminescentLimestone() => compClass = typeof(CompLuminescentLimestone);
 }
 
-public class CompIlluminescentLimestone : ThingComp
+public class CompLuminescentLimestone : ThingComp
 {
     public const string ResearchDefName = "BR_LuminescentWalls";
-    public CompProperties_IlluminescentLimestone Props => (CompProperties_IlluminescentLimestone)props;
+    public CompProperties_LuminescentLimestone Props => (CompProperties_LuminescentLimestone)props;
 
     public override void PostDestroy(DestroyMode mode, Map previousMap)
     {

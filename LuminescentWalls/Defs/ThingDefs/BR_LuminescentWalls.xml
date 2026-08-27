@@ -4,14 +4,14 @@
   <ThingDef ParentName="BuildingBase">
     <defName>BR_LuminescentWallsResearchBuilding</defName>
     <label>unavailable luminescent walls research station</label>
-    <description>This research station cannot be constructed. Complete Luminescent Walls by deconstructing illuminescent limestone walls in Ancient Dangers.</description>
+    <description>This research station cannot be constructed. Complete Luminescent Walls by deconstructing luminescent limestone walls in Ancient Dangers.</description>
     <thingClass>Building</thingClass>
     <graphicData>
       <texPath>UI/Designators/Cancel</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
   </ThingDef>
-  <ThingDef ParentName="Wall" Name="BR_IlluminescentWallBase" Abstract="True">
+  <ThingDef ParentName="Wall" Name="BR_LuminescentWallBase" Abstract="True">
     <stuffCategories Inherit="False"/>
     <costStuffCount>0</costStuffCount>
     <useStuffTerrainAffordance>false</useStuffTerrainAffordance>
@@ -37,9 +37,9 @@
       <li Class="BetterRimworlds.LuminescentWalls.CompProperties_StargateTemperatureControl"/>
     </comps>
   </ThingDef>
-  <ThingDef ParentName="BR_IlluminescentWallBase">
-    <defName>BR_IlluminescentLimestoneWall</defName>
-    <label>illuminescent limestone wall</label>
+  <ThingDef ParentName="BR_LuminescentWallBase">
+    <defName>BR_LuminescentLimestoneWall</defName>
+    <label>luminescent limestone wall</label>
     <description>A structural limestone wall whose surface emits a sourceless light, largely as described in the book "The Unincorporated Man" by Dani Kollin and Eytan Kollin. Draws 1 W. Deconstructing it advances Luminescent Walls research.</description>
     <graphicData>
       <color>(158, 153, 135)</color>
@@ -56,12 +56,12 @@
       <li>BR_LuminescentWalls</li>
     </researchPrerequisites>
     <comps>
-      <li Class="BetterRimworlds.LuminescentWalls.CompProperties_IlluminescentLimestone"/>
+      <li Class="BetterRimworlds.LuminescentWalls.CompProperties_LuminescentLimestone"/>
     </comps>
   </ThingDef>
-  <ThingDef ParentName="BR_IlluminescentWallBase">
-    <defName>BR_IlluminescentSandstoneWall</defName>
-    <label>illuminescent sandstone wall</label>
+  <ThingDef ParentName="BR_LuminescentWallBase">
+    <defName>BR_LuminescentSandstoneWall</defName>
+    <label>luminescent sandstone wall</label>
     <description>A structural sandstone wall emitting sourceless light. Draws 1 W.</description>
     <graphicData>
       <color>(126, 104, 94)</color>
@@ -78,9 +78,9 @@
       <li>BR_LuminescentWalls</li>
     </researchPrerequisites>
   </ThingDef>
-  <ThingDef ParentName="BR_IlluminescentWallBase">
-    <defName>BR_IlluminescentMarbleWall</defName>
-    <label>illuminescent marble wall</label>
+  <ThingDef ParentName="BR_LuminescentWallBase">
+    <defName>BR_LuminescentMarbleWall</defName>
+    <label>luminescent marble wall</label>
     <description>A structural marble wall emitting sourceless light. Draws 1 W.</description>
     <graphicData>
       <color>(132, 135, 132)</color>
@@ -97,9 +97,9 @@
       <li>BR_LuminescentWalls</li>
     </researchPrerequisites>
   </ThingDef>
-  <ThingDef ParentName="BR_IlluminescentWallBase">
-    <defName>BR_IlluminescentGraniteWall</defName>
-    <label>illuminescent granite wall</label>
+  <ThingDef ParentName="BR_LuminescentWallBase">
+    <defName>BR_LuminescentGraniteWall</defName>
+    <label>luminescent granite wall</label>
     <description>A structural granite wall emitting sourceless light. Draws 1 W.</description>
     <graphicData>
       <color>(105, 95, 97)</color>
@@ -116,9 +116,9 @@
       <li>BR_LuminescentWalls</li>
     </researchPrerequisites>
   </ThingDef>
-  <ThingDef ParentName="BR_IlluminescentWallBase">
-    <defName>BR_IlluminescentSlateWall</defName>
-    <label>illuminescent slate wall</label>
+  <ThingDef ParentName="BR_LuminescentWallBase">
+    <defName>BR_LuminescentSlateWall</defName>
+    <label>luminescent slate wall</label>
     <description>A structural slate wall emitting sourceless light. Draws 1 W.</description>
     <graphicData>
       <color>(70, 70, 70)</color>
@@ -135,9 +135,9 @@
       <li>BR_LuminescentWalls</li>
     </researchPrerequisites>
   </ThingDef>
-  <ThingDef ParentName="BR_IlluminescentWallBase">
-    <defName>BR_IlluminescentPlasteelWall</defName>
-    <label>illuminescent plasteel wall</label>
+  <ThingDef ParentName="BR_LuminescentWallBase">
+    <defName>BR_LuminescentPlasteelWall</defName>
+    <label>luminescent plasteel wall</label>
     <description>A fireproof structural plasteel wall emitting sourceless light. Draws 1 W.</description>
     <graphicData>
       <color>(170,192,200)</color>

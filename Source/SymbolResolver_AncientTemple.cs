@@ -27,7 +27,7 @@ public class SymbolResolver_AncientTemple : RimWorld.BaseGen.SymbolResolver_Anci
         base.Resolve(rp);
 
         if (map == null) return;
-        var wallDef = DefDatabase<ThingDef>.GetNamedSilentFail("BR_IlluminescentLimestoneWall");
+        var wallDef = DefDatabase<ThingDef>.GetNamedSilentFail("BR_LuminescentLimestoneWall");
         if (wallDef == null) return;
 
         foreach (IntVec3 cell in rp.rect)
