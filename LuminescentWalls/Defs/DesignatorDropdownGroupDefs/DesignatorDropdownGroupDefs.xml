@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <!-- Groups all luminescent wall variants under one "luminescent walls" entry in the Architecture -> Structure tab, like vanilla groups carpet/tile variants. -->
+  <DesignatorDropdownGroupDef>
+    <defName>BR_LuminescentWalls</defName>
+    <label>luminescent walls</label>
+  </DesignatorDropdownGroupDef>
+
+</Defs>

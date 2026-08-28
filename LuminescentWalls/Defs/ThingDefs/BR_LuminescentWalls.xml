@@ -24,6 +24,8 @@
     <leaveResourcesWhenKilled>true</leaveResourcesWhenKilled>
     <resourcesFractionWhenDeconstructed>0.5</resourcesFractionWhenDeconstructed>
     <designationCategory>Structure</designationCategory>
+    <designatorDropdown>BR_LuminescentWalls</designatorDropdown>
+    <uiOrder>2000</uiOrder>
     <tickerType>Rare</tickerType>
     <comps>
       <li Class="CompProperties_Power">
