@@ -9,6 +9,11 @@
     <li>1.4</li>
     <li>1.5</li>
     <li>1.6</li>
+    <li>1.7</li>
   </supportedVersions>
-<description>Luminescent stone and metal walls provide gentle powered light. The walls emit a 'sourceless light', largely as described in the book "The Unincorporated Man" by Dani Kollin and Eytan Kollin. Only newly generated Ancient Dangers contain luminescent limestone wall samples; repeatedly deconstruct them to complete the Luminescent Walls project, which cannot be researched normally and unlocks limestone, sandstone, granite, slate, and marble variants. Luminescent Plasteel is a separate, normally researchable project that requires Luminescent Walls and unlocks only plasteel. Existing or already generated dangers are unchanged.</description>
+<description>Luminescent stone and metal walls provide gentle powered light. The walls emit a 'sourceless light', largely as described in the book "The Unincorporated Man" by Dani Kollin and Eytan Kollin. 
+
+Only newly generated Ancient Dangers contain luminescent limestone wall samples; repeatedly deconstruct them to complete the Luminescent Walls project, which cannot be researched normally and unlocks limestone, sandstone, granite, slate, and marble variants. Luminescent Plasteel is a separate, normally researchable project that requires Luminescent Walls and unlocks only plasteel.
+
+All Luminescent walls are fireproof.</description>
 </ModMetaData>

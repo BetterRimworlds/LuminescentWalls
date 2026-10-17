@@ -7,7 +7,7 @@
     <LangVersion>10</LangVersion>
     <ImplicitUsings>enable</ImplicitUsings>
     <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
-    <Configurations>Release v1.2;Release v1.3;Release v1.4;Release v1.5;Release v1.6</Configurations>
+    <Configurations>Release v1.2;Release v1.3;Release v1.4;Release v1.5;Release v1.6;Release v1.7</Configurations>
   </PropertyGroup>
 
   <!-- Configuration-specific properties -->
@@ -34,6 +34,12 @@
   <PropertyGroup Condition="'$(Configuration)' == 'Release v1.6'">
     <DefineConstants>RIMWORLD16</DefineConstants>
     <OutputPath>/rimworld/1.2/Mods/LuminescentWalls/1.6/Assemblies</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release v1.7' ">
+    <TargetFramework>net10.0</TargetFramework>
+    <DefineConstants>RIMWORLD17</DefineConstants>
+    <GenerateDependencyFile>false</GenerateDependencyFile>
+    <OutputPath>/rimworld/1.2/Mods/LuminescentWalls/1.7/Assemblies</OutputPath>
   </PropertyGroup>
 
   <!-- References for Release v1.2 -->
@@ -140,5 +146,25 @@
       <Private>False</Private>
     </Reference>
     <PackageReference Include="Microsoft.NETFramework.ReferenceAssemblies" Version="1.0.2" PrivateAssets="all" />
+  </ItemGroup>
+
+  <!-- References for Release v1.7. Game assemblies live in the install root; UnityStubs provides UnityEngine. -->
+  <ItemGroup Condition=" '$(Configuration)' == 'Release v1.7' ">
+    <Reference Include="Assembly-CSharp">
+      <HintPath>/rimworld/1.7-steam/Assembly-CSharp.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityStubs">
+      <HintPath>/rimworld/1.7-steam/UnityStubs.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Waylith">
+      <HintPath>/rimworld/1.7-steam/Waylith.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="0Harmony">
+      <HintPath>/rimworld/1.7-steam/Mods/Harmony/1.7/Assemblies/0Harmony.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
   </ItemGroup>
 </Project>

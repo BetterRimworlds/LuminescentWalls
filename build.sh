@@ -32,13 +32,13 @@ function sync_mod() {
     rm -rf /rimworld/1.4/Mods/${MOD}
     rm -rf /rimworld/1.5/Mods/${MOD}
     rm -rf /rimworld/1.6/Mods/${MOD}
-    rm -rf /rimworld/1.6-steam/Mods/${MOD}
+    rm -rf /rimworld/1.7-steam/Mods/${MOD}
 
     cp -af /rimworld/1.2/Mods/${MOD} /rimworld/1.3/Mods
     cp -af /rimworld/1.2/Mods/${MOD} /rimworld/1.4/Mods
     cp -af /rimworld/1.2/Mods/${MOD} /rimworld/1.5/Mods
     cp -af /rimworld/1.2/Mods/${MOD} /rimworld/1.6/Mods
-    cp -af /rimworld/1.2/Mods/${MOD} /rimworld/1.6-steam/Mods
+    cp -af /rimworld/1.2/Mods/${MOD} /rimworld/1.7-steam/Mods
 }
 
 function build() {
@@ -59,6 +59,13 @@ function build() {
 
     if [[ $failed -eq 1 ]]; then
         echo "One or more builds failed. Aborting sync."
+        return 1
+    fi
+
+    # v1.7 targets net10.0, so it cannot share the net472 assets file.
+    echo "Building for configuration: v1.7"
+    if ! dotnet build "$solutionPath" --configuration "Release v1.7"; then
+        echo "Build failed for Release v1.7. Aborting sync."
         return 1
     fi
 
